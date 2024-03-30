@@ -1,8 +1,5 @@
 body{
- background-image: url(animegirl.jpg);
- background-position: center;
- background-size: cover;
- background-attachment: fixed;
+ background-color: purple;
  overflow-x: hidden;
 }
 .white-text{
