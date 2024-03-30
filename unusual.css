@@ -1,5 +1,8 @@
 body{
- background-color: rgb(43, 42, 42);
+ background-image: url(mazaic.webp);
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
  overflow-x: hidden;
 }
 .white-text{
