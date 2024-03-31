@@ -1,5 +1,8 @@
 body{
  background-image: url(animegirl.jpg);
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
  overflow-x: hidden;
  margin: 0;
  padding: 0;
