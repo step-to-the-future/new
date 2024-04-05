@@ -108,31 +108,53 @@ font{
   float: left;
   margin-left: 3%;
 }
-.header{
-  background-image: url(lavanda.jpg);
-  background-attachment: fixed;
-  background-position: center;
+.wrapper{
+  position: relative;
+}
+.menu{
   position: fixed;
-  width: 45%;
-  top: 0;
-  z-index: 1000;
-  margin-left: 2%;
-  height: 40px;
-  border-radius: 50px;
+  left: 0; top: 0;
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(40px);
+  transition: 1s;
+  transform: translate(-100%);
 }
-nav{
-  flex: 1;
-  margin-right: 16%;
-  margin-top: -1%;
+.menu_active{
+  transform: translate(0%);
 }
-nav ul li{
-  list-style: none;
-  display: inline-block;
-  margin-left: 60px;
+.menu-list{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  flex-direction: column;
+  margin-top: 20px;
 }
-nav ul li a{
+.menu-list a{
   text-decoration: none;
-  color:black;
-  font-size: 16px;
+  list-style: none;
+  font-size: x-large;
+  color: aqua;
+  text-transform: uppercase;
+  font-weight: 1000;
 }
-
+.menu-btn{
+  width: 30px;
+  height: 30px;
+  background-image: url(favicon.ico);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20%;
+  position: absolute;
+  right: -40px;
+  top: 10px;
+  transition: background-color 0.6s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.menu-btn:hover{
+  background-image: url(fav.ico);
+}
